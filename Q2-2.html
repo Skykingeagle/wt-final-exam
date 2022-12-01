@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p id="demo"></p>
+<script>
+
+    function inAscOrder(arr, n)
+    {
+    
+    
+    if (n == 1 || n == 0)
+    return 1;
+    
+    
+    if (arr[n - 1] < arr[n - 2])
+    return 0;
+    
+    
+    
+    return inAscOrder(arr, n - 1);
+    }
+    
+    
+    let arr = [ 20, 78, 23, 45, 78, 88 ];
+    let n = arr.length;
+    
+    if (inAscOrder(arr, n) != 0)
+    document.write("True");
+    else
+    document.write("False");
+    
+    
+    
+    </script>
+
+</body>
+</html>
